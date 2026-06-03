@@ -10,10 +10,10 @@ export default function ProcessSection() {
             Our Approach
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-            How We Build Your Growth Engine
+            How It Works
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            A proven three-phase system that turns ambition into measurable outcomes.
+            We handle everything. You just show up and do the work.
           </p>
         </AnimatedSection>
 

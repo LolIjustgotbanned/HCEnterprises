@@ -10,16 +10,17 @@ import type {
 
 export const SITE = {
   name: 'HC Enterprises',
-  tagline: 'We Engineer Growth. At Scale.',
+  tagline: 'More Calls. More Customers. Less Hassle.',
   subTagline:
-    'HC Enterprises unifies your brand strategy, digital systems, and performance marketing into one revenue-driving machine.',
-  cta: 'Start Your Ascent',
+    'HC Enterprises builds professional websites, sets up your CRM, and markets your business online — so you can focus on the work, not the screen.',
+  cta: 'Get More Customers',
   email: 'hello@hcenterprises.co',
-  socialProof: 'Trusted By 50+ Brands Across North America',
+  socialProof: 'Helping Local Businesses Get More Customers',
 }
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Services', href: '#services' },
+  { label: 'Industries', href: '#industries' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'Process', href: '#process' },
   { label: 'Resources', href: '#resources' },
@@ -29,93 +30,104 @@ export const NAV_LINKS: NavLink[] = [
 
 export const VALUE_PILLARS: ValuePillar[] = [
   {
-    icon: 'Compass',
-    title: 'Brand Architecture',
+    icon: 'Globe',
+    title: 'AI-Powered Websites',
     description:
-      'We audit your positioning, competitive landscape, and messaging to construct a brand identity that commands premium prices.',
+      'We design and build fast, professional websites using the latest AI tools — ready in days, not months. Your site will look great on every phone and screen.',
   },
   {
-    icon: 'Zap',
-    title: 'Revenue Systems',
+    icon: 'LayoutDashboard',
+    title: 'CRM & Automation',
     description:
-      'From CRM architecture to automated nurture sequences — we build the infrastructure that converts strangers into clients on autopilot.',
+      'We set up your GoHighLevel CRM so every lead gets followed up automatically. Track customers, book appointments, and never lose a lead again.',
   },
   {
     icon: 'TrendingUp',
-    title: 'Traffic at Scale',
+    title: 'SEO & Social Media',
     description:
-      'Paid media, organic content, and SEO systems that compound over time, generating leads without proportionally increasing cost.',
+      'We get your business showing up on Google and posting consistently on Instagram, TikTok, and Facebook — so customers find you before they find your competition.',
   },
+]
+
+export const INDUSTRIES = [
+  { icon: 'Scissors', label: 'Landscaping' },
+  { icon: 'Camera', label: 'Security Cameras' },
+  { icon: 'Car', label: 'Car Detailing' },
+  { icon: 'Sun', label: 'Window Tinting' },
+  { icon: 'PaintBucket', label: 'Painting' },
+  { icon: 'Home', label: 'Roofing' },
+  { icon: 'ShoppingBag', label: 'Online Startups' },
+  { icon: 'Wrench', label: 'Blue Collar Trades' },
 ]
 
 export const PRICING_TIERS: PricingTier[] = [
   {
-    name: 'Catalyst',
-    price: '$3,500',
-    implementation: '+ $750 onboarding',
-    target: 'Ideal for $250k–$1M revenue brands',
+    name: 'Starter',
+    price: '$499',
+    implementation: '+ $299 setup',
+    target: 'New & solo businesses',
     status: 'Available',
     statusColor: 'available',
     ctaLabel: 'Get Started',
     features: [
-      'Brand audit & positioning workshop',
-      '3 content campaigns per month',
-      'Email nurture sequence setup',
-      'Monthly performance report',
-      'Slack community access',
+      'AI-built professional website',
+      'GoHighLevel CRM setup',
+      'Google Business Profile optimization',
+      'Lead capture forms',
+      'Monthly check-in call',
     ],
   },
   {
-    name: 'Ascent',
-    price: '$8,500',
-    implementation: '+ $1,750 onboarding',
-    target: 'Ideal for $1M–$5M revenue brands',
+    name: 'Growth',
+    price: '$899',
+    implementation: '+ $499 setup',
+    target: 'Established local businesses',
     badge: 'Most Popular',
-    status: '2 Spots Left',
+    status: '3 Spots Left',
     statusColor: 'limited',
     highlighted: true,
     ctaLabel: 'Get Started',
     features: [
-      'Everything in Catalyst',
-      'Unlimited campaign executions',
-      'Full CRM buildout & automation',
-      'Paid media management (Google + Meta)',
-      'Bi-weekly strategy calls',
-      'Dedicated account manager',
+      'Everything in Starter',
+      'Local SEO optimization',
+      'Social media management (Instagram + Facebook + TikTok)',
+      '3 posts per week per platform',
+      'Automated lead follow-up sequences',
+      'Bi-weekly performance report',
     ],
   },
   {
-    name: 'Summit',
-    price: '$25,000',
-    implementation: '+ $5,000 onboarding',
-    target: 'Ideal for $5M–$50M revenue brands',
-    status: '1 Spot Left',
+    name: 'Scale',
+    price: '$1,799',
+    implementation: '+ $999 setup',
+    target: 'Multi-service or expanding businesses',
+    status: '2 Spots Left',
     statusColor: 'limited',
     ctaLabel: 'Get Started',
     features: [
-      'Everything in Ascent',
-      'Custom AI-assisted content systems',
-      'Full team collaboration suite',
-      'PR & partnership outreach',
-      'Weekly executive briefings',
-      '24/7 priority support line',
+      'Everything in Growth',
+      'Paid ad campaigns (Google + Meta)',
+      'Unlimited content creation',
+      'Dedicated account manager',
+      'Weekly strategy calls',
+      'Priority support (same-day response)',
     ],
   },
   {
-    name: 'Private Client',
+    name: 'Custom',
     price: 'Custom',
     implementation: 'Custom onboarding',
-    target: '$50M+ / Enterprise',
-    status: 'By referral only',
+    target: 'Multi-location / franchise',
+    status: 'Book a call',
     statusColor: 'referral',
-    ctaLabel: 'Apply Now',
+    ctaLabel: 'Book a Call',
     features: [
-      'Everything in Summit',
-      'Dedicated executive team',
-      'Custom technology buildout',
-      'Equity & performance arrangements',
-      'Board-level growth advisory',
-      'Unlimited scope engagements',
+      'Everything in Scale',
+      'Multi-location management',
+      'Custom integrations & automations',
+      'White-glove onboarding',
+      'Dedicated growth strategist',
+      'Custom reporting dashboard',
     ],
   },
 ]
@@ -123,75 +135,75 @@ export const PRICING_TIERS: PricingTier[] = [
 export const PROCESS_PHASES: ProcessPhase[] = [
   {
     number: '01',
-    title: 'Discovery & Audit',
+    title: 'We Build Your Foundation',
     description:
-      'We conduct a deep diagnostic of your brand, market position, existing systems, and untapped revenue opportunities. You receive a custom growth roadmap before we begin.',
+      'We create your website and set up your CRM in 7–14 days. You\'ll have a professional online presence and a system that captures every lead from day one.',
   },
   {
     number: '02',
-    title: 'System Architecture',
+    title: 'We Get You Found',
     description:
-      'We build the operational backbone — CRM, automations, content infrastructure, and ad accounts — configured specifically for your offer and audience.',
+      'We optimize your Google presence and start posting on social media. Customers in your area start finding your business when they search for your service.',
   },
   {
     number: '03',
-    title: 'Scale & Optimize',
+    title: 'We Keep It Growing',
     description:
-      'With systems live, we deploy traffic strategies and optimize relentlessly. Weekly data reviews ensure every dollar compounds into measurable growth.',
+      'Every month we track what\'s working, adjust your strategy, and keep leads coming in — so your business grows while you focus on the job.',
   },
 ]
 
 export const RESOURCES: Resource[] = [
   {
+    type: 'Free Guide',
+    title: '5 Ways to Get More Local Clients in 2025',
+    description:
+      'The exact strategies local service businesses use to fill their schedule with Google, social media, and automation — without spending a fortune on ads.',
+  },
+  {
+    type: 'Free Checklist',
+    title: 'Google Business Profile Setup Checklist',
+    description:
+      'Step-by-step: set up and optimize your Google Business Profile so you show up when locals search for your service. Takes under 30 minutes.',
+  },
+  {
     type: 'Free Report',
-    title: 'The 2025 Brand Positioning Playbook',
+    title: 'Why Your Website Isn\'t Getting You Calls',
     description:
-      'A framework for repositioning your brand to command premium pricing in a commoditized market.',
-  },
-  {
-    type: 'Free Tool',
-    title: 'Paid Media ROI Calculator',
-    description:
-      'Forecast your return before spending a dollar. Input your margins and conversion rates, get your projected ROAS.',
-  },
-  {
-    type: 'Free Download',
-    title: 'Revenue Systems Audit Checklist',
-    description:
-      '47 questions to identify the exact bottlenecks costing your business revenue every month.',
+      'The 7 most common mistakes on local business websites that cost you leads every day — and how to fix them.',
   },
 ]
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
-    question: 'What makes HC Enterprises different from a traditional agency?',
+    question: 'Do I need a website if I already get work through referrals?',
     answer:
-      "We don't sell deliverables — we build systems. Every engagement is designed around a measurable revenue outcome, not a monthly content calendar.",
+      'Referrals are great, but 87% of people check a business online before calling — even if they were referred. A professional website makes you look credible and captures leads around the clock, even while you\'re on the job.',
   },
   {
-    question: 'How long until we see results?',
+    question: 'What is a CRM and why does my business need one?',
     answer:
-      'Most clients see measurable KPI movement within 45–60 days. Full system maturity — where compounding effects kick in — typically occurs at the 90–120 day mark.',
+      'A CRM (we use GoHighLevel) is software that tracks every lead, sends automatic follow-up texts and emails, and books appointments for you. It means no more lost leads and no more manually texting every new inquiry.',
   },
   {
-    question: 'Do you work with businesses outside North America?',
+    question: 'How long does it take to build my website?',
     answer:
-      'Yes. While our core team is North America-based, we work with English-speaking brands globally. Time zone alignment is assessed during onboarding.',
+      'Most websites are live within 7–14 days of your onboarding call. We use AI tools to build faster without cutting corners on quality.',
   },
   {
-    question: 'Is there a minimum contract term?',
+    question: 'Will SEO actually work for my type of business?',
     answer:
-      'All engagements begin with a 3-month minimum to allow systems to reach maturity. Month-to-month options are available at the Summit tier and above.',
+      'Yes — local SEO is one of the highest ROI investments for service businesses. When someone in your city searches "car detailer near me" or "roofing company [city]", we make sure your business shows up.',
   },
   {
-    question: 'What is the onboarding process like?',
+    question: 'Do I have to create my own social media content?',
     answer:
-      'After signing, you receive an onboarding questionnaire and are booked for a 90-minute discovery session within 5 business days. System build begins immediately after.',
+      'No. We handle content creation and posting for you across Instagram, TikTok, and Facebook. You just keep doing what you do — we document and post it.',
   },
   {
-    question: 'Can I upgrade my tier mid-engagement?',
+    question: 'What results can I realistically expect?',
     answer:
-      'Yes. Tier upgrades are prorated and take effect at the start of the next billing cycle. Downgrades are subject to the 3-month minimum.',
+      'Most clients see new inbound leads within the first 30 days. SEO results compound over 3–6 months. We track everything and show you exactly what\'s working each month.',
   },
 ]
 
@@ -202,16 +214,16 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: 'About Us', href: '#' },
       { label: 'Our Team', href: '#' },
       { label: 'Case Studies', href: '#' },
-      { label: 'Partners', href: '#' },
+      { label: 'Contact', href: '#contact' },
     ],
   },
   {
     title: 'Resources',
     links: [
       { label: 'Blog', href: '#' },
-      { label: 'Free Tools', href: '#resources' },
-      { label: 'Reports', href: '#resources' },
-      { label: 'Webinars', href: '#' },
+      { label: 'Free Guides', href: '#resources' },
+      { label: 'Checklists', href: '#resources' },
+      { label: 'FAQ', href: '#faq' },
     ],
   },
   {
@@ -225,14 +237,14 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 ]
 
 export const CLIENT_NAMES = [
-  'Meridian',
-  'Vantage Co.',
-  'Apex Group',
-  'Luminary',
-  'Cascade',
-  'Pinnacle',
-  'Ardent',
-  'Nexus',
-  'Stratos',
-  'Ellipsis',
+  'Green Cuts Lawn Co.',
+  'ProShield Security',
+  'Elite Detail Co.',
+  'Summit Roofing',
+  'ColorPro Painting',
+  'TintPros',
+  'CleanCut Landscaping',
+  'Armour Cameras',
+  'Premier Auto Spa',
+  'BrightCoat Painters',
 ]

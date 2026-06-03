@@ -11,10 +11,10 @@ export default function FAQSection() {
             FAQ
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-            Common Questions
+            Got Questions?
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Everything you need to know before starting your engagement.
+            Everything local business owners ask us before getting started.
           </p>
         </AnimatedSection>
 

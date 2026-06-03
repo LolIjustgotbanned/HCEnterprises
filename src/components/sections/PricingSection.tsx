@@ -8,13 +8,13 @@ export default function PricingSection() {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
-            Investment Levels
+            Simple, Transparent Pricing
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-            Choose Your Engagement
+            Plans for Every Stage
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Select the model that matches where you are — and where you&apos;re determined to go.
+            No surprise fees. No long-term lock-ins. Just results.
           </p>
         </AnimatedSection>
 
@@ -28,7 +28,7 @@ export default function PricingSection() {
 
         <AnimatedSection className="mt-12 text-center">
           <p className="text-slate-500 text-sm">
-            All tiers include a 3-month minimum. Implementation fees are one-time.{' '}
+            All plans include a 30-day results guarantee. Setup fees are one-time.{' '}
             <a href="#faq" className="text-[#D4AF6A] hover:underline">
               Read the FAQ
             </a>{' '}

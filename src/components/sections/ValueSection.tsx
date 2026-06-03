@@ -1,11 +1,11 @@
-import { Compass, Zap, TrendingUp } from 'lucide-react'
+import { Globe, LayoutDashboard, TrendingUp } from 'lucide-react'
 import { VALUE_PILLARS } from '@/lib/constants'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import { LucideIcon } from 'lucide-react'
 
 const iconMap: Record<string, LucideIcon> = {
-  Compass,
-  Zap,
+  Globe,
+  LayoutDashboard,
   TrendingUp,
 }
 
@@ -18,12 +18,12 @@ export default function ValueSection() {
             What We Do
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-            Built for Brands That Refuse
+            Built for Local Businesses
             <br />
-            <span className="text-slate-400">to Stand Still</span>
+            <span className="text-slate-400">That Want to Grow</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Three integrated capabilities that compound into a complete revenue engine.
+            Three services that bring you more calls, more bookings, and more customers — handled for you.
           </p>
         </AnimatedSection>
 

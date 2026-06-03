@@ -49,7 +49,7 @@ export default function HeroSection() {
           <motion.div variants={itemVariants} className="mb-6">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#D4AF6A]/30 bg-[#D4AF6A]/5 text-[#D4AF6A] text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-[#D4AF6A] animate-pulse" />
-              Now accepting new clients
+              Now helping local businesses grow
             </span>
           </motion.div>
 
@@ -57,9 +57,9 @@ export default function HeroSection() {
             variants={itemVariants}
             className="font-display text-5xl sm:text-6xl lg:text-8xl font-black leading-[1.05] tracking-tight mb-6"
           >
-            <span className="text-white block">We Engineer Growth.</span>
+            <span className="text-white block">More Calls.</span>
             <span className="bg-gradient-to-r from-[#D4AF6A] via-[#E8D5A3] to-[#C9972A] bg-clip-text text-transparent block">
-              At Scale.
+              More Customers.
             </span>
           </motion.h1>
 
@@ -102,7 +102,7 @@ export default function HeroSection() {
               <span>{SITE.socialProof}</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-[#1A2540]" />
-            <span>3-month minimum. Results in 45 days.</span>
+            <span>No long-term contracts. First leads in 30 days.</span>
           </motion.div>
         </motion.div>
       </div>
