@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-navy-950: #050A18;
+  --color-navy-900: #080F24;
+  --color-navy-800: #0D1630;
+  --color-navy-700: #1A2540;
+  --color-navy-600: #243050;
+  --color-gold-300: #E8D5A3;
+  --color-gold-400: #D4AF6A;
+  --color-gold-500: #C9972A;
+  --color-gold-600: #A87820;
+  --color-slate-950: #020617;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-fade-up: fadeUp 0.6s ease-out forwards;
+  --animate-fade-in: fadeIn 0.4s ease-out forwards;
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }
 
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050A18;
+  color: #F8FAFC;
+  font-family: var(--font-body), 'Inter', system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050A18;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 106, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 106, 0.5);
+}
+
+/* Legal page prose */
+.prose-legal h2 {
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-legal h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #CBD5E1;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-legal p {
+  color: #94A3B8;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose-legal ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #94A3B8;
+  margin-bottom: 1rem;
+}
+
+.prose-legal ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.prose-legal a {
+  color: #D4AF6A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-legal a:hover {
+  color: #E8D5A3;
+}
+
+.prose-legal strong {
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+.prose-legal hr {
+  border-color: #1A2540;
+  margin: 2rem 0;
+}
+
+.prose-legal .highlight-box {
+  background: #0D1630;
+  border: 1px solid #1A2540;
+  border-left: 3px solid #D4AF6A;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.prose-legal .highlight-box p {
+  margin: 0;
+  color: #CBD5E1;
+}
+
+.prose-legal table {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.prose-legal code {
+  font-family: 'Courier New', monospace;
 }
