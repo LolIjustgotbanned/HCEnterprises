@@ -42,16 +42,16 @@ export default function CookiesPage() {
       </p>
 
       <div className="overflow-x-auto my-4">
-        <table className="w-full text-sm text-slate-400 border-collapse">
+        <table className="w-full text-sm text-zinc-400 border-collapse">
           <thead>
-            <tr className="border-b border-[#1A2540] text-left">
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Name</th>
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Purpose</th>
-              <th className="py-2 text-slate-300 font-semibold">Duration</th>
+            <tr className="border-b border-[#2A2A2A] text-left">
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Name</th>
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Purpose</th>
+              <th className="py-2 text-zinc-300 font-semibold">Duration</th>
             </tr>
           </thead>
           <tbody>
-            <tr className="border-b border-[#1A2540]">
+            <tr className="border-b border-[#2A2A2A]">
               <td className="py-3 pr-4 font-mono text-[#D4AF6A] text-xs">hc_cookie_consent</td>
               <td className="py-3 pr-4">Stores your cookie consent preferences</td>
               <td className="py-3">1 year</td>
@@ -68,13 +68,13 @@ export default function CookiesPage() {
       </p>
 
       <div className="overflow-x-auto my-4">
-        <table className="w-full text-sm text-slate-400 border-collapse">
+        <table className="w-full text-sm text-zinc-400 border-collapse">
           <thead>
-            <tr className="border-b border-[#1A2540] text-left">
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Name</th>
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Provider</th>
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Purpose</th>
-              <th className="py-2 text-slate-300 font-semibold">Duration</th>
+            <tr className="border-b border-[#2A2A2A] text-left">
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Name</th>
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Provider</th>
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Purpose</th>
+              <th className="py-2 text-zinc-300 font-semibold">Duration</th>
             </tr>
           </thead>
           <tbody>
@@ -83,7 +83,7 @@ export default function CookiesPage() {
               { name: '_ga_*', provider: 'Google Analytics', purpose: 'Maintains session state', duration: '2 years' },
               { name: '_gid', provider: 'Google Analytics', purpose: 'Distinguishes users (short)', duration: '24 hours' },
             ].map((row) => (
-              <tr key={row.name} className="border-b border-[#1A2540]">
+              <tr key={row.name} className="border-b border-[#2A2A2A]">
                 <td className="py-3 pr-4 font-mono text-[#D4AF6A] text-xs">{row.name}</td>
                 <td className="py-3 pr-4">{row.provider}</td>
                 <td className="py-3 pr-4">{row.purpose}</td>
@@ -103,13 +103,13 @@ export default function CookiesPage() {
       </p>
 
       <div className="overflow-x-auto my-4">
-        <table className="w-full text-sm text-slate-400 border-collapse">
+        <table className="w-full text-sm text-zinc-400 border-collapse">
           <thead>
-            <tr className="border-b border-[#1A2540] text-left">
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Name</th>
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Provider</th>
-              <th className="py-2 pr-4 text-slate-300 font-semibold">Purpose</th>
-              <th className="py-2 text-slate-300 font-semibold">Duration</th>
+            <tr className="border-b border-[#2A2A2A] text-left">
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Name</th>
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Provider</th>
+              <th className="py-2 pr-4 text-zinc-300 font-semibold">Purpose</th>
+              <th className="py-2 text-zinc-300 font-semibold">Duration</th>
             </tr>
           </thead>
           <tbody>
@@ -119,7 +119,7 @@ export default function CookiesPage() {
               { name: 'ads/ga-audiences', provider: 'Google Ads', purpose: 'Re-engagement of users via Google Ads', duration: 'Session' },
               { name: '_gcl_au', provider: 'Google Ads', purpose: 'Conversion tracking', duration: '3 months' },
             ].map((row) => (
-              <tr key={row.name} className="border-b border-[#1A2540]">
+              <tr key={row.name} className="border-b border-[#2A2A2A]">
                 <td className="py-3 pr-4 font-mono text-[#D4AF6A] text-xs">{row.name}</td>
                 <td className="py-3 pr-4">{row.provider}</td>
                 <td className="py-3 pr-4">{row.purpose}</td>
@@ -153,7 +153,7 @@ export default function CookiesPage() {
       <p>
         When you first visit our Site, a cookie consent banner will appear allowing you to accept
         all cookies or select only essential cookies. Your preferences are stored in the{' '}
-        <code className="text-[#D4AF6A] font-mono text-xs bg-[#0D1630] px-1.5 py-0.5 rounded">
+        <code className="text-[#D4AF6A] font-mono text-xs bg-[#1A1A1A] px-1.5 py-0.5 rounded">
           hc_cookie_consent
         </code>{' '}
         cookie for one year.

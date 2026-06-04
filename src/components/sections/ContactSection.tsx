@@ -58,10 +58,10 @@ export default function ContactSection() {
   }
 
   const field =
-    'w-full bg-[#080F24] border border-[#1A2540] rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#D4AF6A]/50 transition-colors'
+    'w-full bg-[#0A0A0A] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#D4AF6A]/50 transition-colors'
 
   return (
-    <section id="contact" className="py-24 px-6 bg-[#080F24]">
+    <section id="contact" className="py-24 px-6 bg-[#0A0A0A]">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
@@ -72,9 +72,9 @@ export default function ContactSection() {
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
               Ready to Build Your
               <br />
-              <span className="text-slate-400">Growth Engine?</span>
+              <span className="text-zinc-400">Growth Engine?</span>
             </h2>
-            <p className="text-slate-400 leading-relaxed mb-10">
+            <p className="text-zinc-400 leading-relaxed mb-10">
               Fill out the form and a member of our team will reach out within 1 business day to
               schedule your complimentary growth audit.
             </p>
@@ -88,13 +88,13 @@ export default function ContactSection() {
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-[#D4AF6A] shrink-0" />
-                  <span className="text-slate-300 text-sm">{item.label}</span>
+                  <span className="text-zinc-300 text-sm">{item.label}</span>
                 </div>
               ))}
             </div>
 
-            <div className="mt-10 pt-10 border-t border-[#1A2540]">
-              <p className="text-slate-500 text-sm mb-1">Prefer email?</p>
+            <div className="mt-10 pt-10 border-t border-[#2A2A2A]">
+              <p className="text-zinc-500 text-sm mb-1">Prefer email?</p>
               <a
                 href={`mailto:${SITE.email}`}
                 className="text-[#D4AF6A] hover:underline font-medium"
@@ -106,19 +106,19 @@ export default function ContactSection() {
 
           {/* Right */}
           <AnimatedSection delay={0.15}>
-            <div className="rounded-2xl border border-[#1A2540] bg-[#0D1630] p-8">
+            <div className="rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A] p-8">
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <CheckCircle className="w-16 h-16 text-[#D4AF6A] mb-6" />
                   <h3 className="text-white text-2xl font-semibold mb-3">Message Received</h3>
-                  <p className="text-slate-400">
+                  <p className="text-zinc-400">
                     We&apos;ll be in touch within 1 business day to schedule your growth audit.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} noValidate className="space-y-5">
                   <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
+                    <label className="block text-zinc-300 text-sm font-medium mb-2">
                       Full Name
                     </label>
                     <input
@@ -132,7 +132,7 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
+                    <label className="block text-zinc-300 text-sm font-medium mb-2">
                       Business Email
                     </label>
                     <input
@@ -146,7 +146,7 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
+                    <label className="block text-zinc-300 text-sm font-medium mb-2">
                       Annual Revenue
                     </label>
                     <select
@@ -169,8 +169,8 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
-                      Tier Interest <span className="text-slate-600">(optional)</span>
+                    <label className="block text-zinc-300 text-sm font-medium mb-2">
+                      Tier Interest <span className="text-zinc-600">(optional)</span>
                     </label>
                     <select
                       value={form.tier}
@@ -186,7 +186,7 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-slate-300 text-sm font-medium mb-2">
+                    <label className="block text-zinc-300 text-sm font-medium mb-2">
                       Tell us about your business
                     </label>
                     <textarea

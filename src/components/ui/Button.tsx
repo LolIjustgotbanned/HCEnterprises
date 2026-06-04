@@ -19,10 +19,10 @@ export default function Button({
     'inline-flex items-center justify-center font-semibold rounded-full transition-all duration-200 cursor-pointer'
 
   const variants = {
-    gold: 'bg-gradient-to-r from-[#D4AF6A] to-[#C9972A] text-[#050A18] hover:scale-105 hover:shadow-lg hover:shadow-[#D4AF6A]/20',
+    gold: 'bg-gradient-to-r from-[#D4AF6A] to-[#C9972A] text-[#000000] hover:scale-105 hover:shadow-lg hover:shadow-[#D4AF6A]/20',
     outline:
       'border border-[#D4AF6A]/40 text-[#D4AF6A] hover:border-[#D4AF6A] hover:bg-[#D4AF6A]/5',
-    ghost: 'text-slate-400 hover:text-white',
+    ghost: 'text-zinc-400 hover:text-white',
   }
 
   const sizes = {

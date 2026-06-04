@@ -11,7 +11,7 @@ export default function LegalLayout({ title, lastUpdated, children }: LegalLayou
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-[#050A18] pt-24 pb-24">
+      <main className="min-h-screen bg-[#000000] pt-24 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           <div className="mb-12">
             <a
@@ -23,7 +23,7 @@ export default function LegalLayout({ title, lastUpdated, children }: LegalLayou
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-3">
               {title}
             </h1>
-            <p className="text-slate-500 text-sm">Last updated: {lastUpdated}</p>
+            <p className="text-zinc-500 text-sm">Last updated: {lastUpdated}</p>
           </div>
 
           <div className="prose-legal">{children}</div>

@@ -36,7 +36,7 @@ export default function CookieBanner() {
           aria-modal="true"
           aria-label="Cookie consent"
         >
-          <div className="max-w-5xl mx-auto bg-[#0D1630] border border-[#1A2540] rounded-2xl shadow-2xl shadow-black/40 p-6">
+          <div className="max-w-5xl mx-auto bg-[#1A1A1A] border border-[#2A2A2A] rounded-2xl shadow-2xl shadow-black/40 p-6">
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex items-center gap-3">
                 <span className="text-2xl" aria-hidden>🍪</span>
@@ -45,13 +45,13 @@ export default function CookieBanner() {
               <button
                 onClick={() => accept(false)}
                 aria-label="Dismiss and decline non-essential cookies"
-                className="text-slate-500 hover:text-white transition-colors shrink-0 mt-0.5"
+                className="text-zinc-500 hover:text-white transition-colors shrink-0 mt-0.5"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
-            <p className="text-slate-400 text-sm leading-relaxed mb-4">
+            <p className="text-zinc-400 text-sm leading-relaxed mb-4">
               HC Enterprises uses essential cookies to keep our site running and, with your consent,
               analytics and marketing cookies to improve your experience and show relevant content.
               You can manage your preferences at any time in our{' '}
@@ -82,7 +82,7 @@ export default function CookieBanner() {
                 ].map((cat) => (
                   <div
                     key={cat.name}
-                    className="rounded-xl border border-[#1A2540] bg-[#080F24] p-4"
+                    className="rounded-xl border border-[#2A2A2A] bg-[#0A0A0A] p-4"
                   >
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-white font-medium">{cat.name}</span>
@@ -90,13 +90,13 @@ export default function CookieBanner() {
                         className={`text-xs px-2 py-0.5 rounded-full ${
                           cat.always
                             ? 'bg-[#D4AF6A]/10 text-[#D4AF6A] border border-[#D4AF6A]/20'
-                            : 'bg-slate-700/30 text-slate-400 border border-slate-700/40'
+                            : 'bg-zinc-700/30 text-zinc-400 border border-zinc-700/40'
                         }`}
                       >
                         {cat.always ? 'Always on' : 'Optional'}
                       </span>
                     </div>
-                    <p className="text-slate-500 text-xs leading-relaxed">{cat.desc}</p>
+                    <p className="text-zinc-500 text-xs leading-relaxed">{cat.desc}</p>
                   </div>
                 ))}
               </div>
@@ -105,19 +105,19 @@ export default function CookieBanner() {
             <div className="flex flex-col sm:flex-row items-center gap-3">
               <button
                 onClick={() => accept(true)}
-                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-gradient-to-r from-[#D4AF6A] to-[#C9972A] text-[#050A18] text-sm font-semibold hover:scale-105 transition-transform cursor-pointer"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-gradient-to-r from-[#D4AF6A] to-[#C9972A] text-[#000000] text-sm font-semibold hover:scale-105 transition-transform cursor-pointer"
               >
                 Accept All
               </button>
               <button
                 onClick={() => accept(false)}
-                className="w-full sm:w-auto px-6 py-2.5 rounded-full border border-[#1A2540] text-slate-300 text-sm hover:border-slate-500 hover:text-white transition-colors cursor-pointer"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-full border border-[#2A2A2A] text-zinc-300 text-sm hover:border-zinc-500 hover:text-white transition-colors cursor-pointer"
               >
                 Essential Only
               </button>
               <button
                 onClick={() => setShowDetails(!showDetails)}
-                className="w-full sm:w-auto text-slate-500 text-sm hover:text-slate-300 transition-colors cursor-pointer"
+                className="w-full sm:w-auto text-zinc-500 text-sm hover:text-zinc-300 transition-colors cursor-pointer"
               >
                 {showDetails ? 'Hide details' : 'Manage preferences'}
               </button>

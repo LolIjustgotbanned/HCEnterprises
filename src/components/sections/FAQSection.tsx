@@ -4,7 +4,7 @@ import AccordionItem from '@/components/ui/AccordionItem'
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-24 px-6 bg-[#050A18]">
+    <section id="faq" className="py-24 px-6 bg-[#000000]">
       <div className="max-w-3xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
@@ -13,13 +13,13 @@ export default function FAQSection() {
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
             Got Questions?
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+          <p className="text-zinc-400 text-lg max-w-xl mx-auto">
             Everything local business owners ask us before getting started.
           </p>
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-          <div className="rounded-2xl border border-[#1A2540] bg-[#0D1630] overflow-hidden px-8">
+          <div className="rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A] overflow-hidden px-8">
             {FAQ_ITEMS.map((item) => (
               <AccordionItem key={item.question} question={item.question} answer={item.answer} />
             ))}

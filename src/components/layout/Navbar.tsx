@@ -17,13 +17,13 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#050A18] border-b border-[#1A2540]' : 'bg-transparent'
+        scrolled ? 'bg-[#000000] border-b border-[#2A2A2A]' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
           <span className="font-bold text-white text-sm tracking-wider">HC</span>
-          <span className="text-slate-600 text-sm">Enterprises</span>
+          <span className="text-zinc-600 text-sm">Enterprises</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-7">
@@ -31,7 +31,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-xs text-slate-500 hover:text-white transition-colors tracking-wide"
+                className="text-xs text-zinc-500 hover:text-white transition-colors tracking-wide"
               >
                 {link.label}
               </a>
@@ -41,13 +41,13 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-flex text-xs font-medium text-[#050A18] bg-[#D4AF6A] px-4 py-2 hover:bg-[#E8D5A3] transition-colors"
+          className="hidden md:inline-flex text-xs font-medium text-[#000000] bg-[#D4AF6A] px-4 py-2 hover:bg-[#E8D5A3] transition-colors"
         >
           {SITE.cta}
         </a>
 
         <button
-          className="md:hidden text-slate-400 hover:text-white transition-colors"
+          className="md:hidden text-zinc-400 hover:text-white transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -56,14 +56,14 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="md:hidden bg-[#050A18] border-b border-[#1A2540]">
+        <div className="md:hidden bg-[#000000] border-b border-[#2A2A2A]">
           <ul className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-3 text-sm text-slate-400 hover:text-white border-b border-[#1A2540] last:border-b-0 transition-colors"
+                  className="block py-3 text-sm text-zinc-400 hover:text-white border-b border-[#2A2A2A] last:border-b-0 transition-colors"
                 >
                   {link.label}
                 </a>
@@ -73,7 +73,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="block text-center text-xs font-medium text-[#050A18] bg-[#D4AF6A] px-4 py-2.5"
+                className="block text-center text-xs font-medium text-[#000000] bg-[#D4AF6A] px-4 py-2.5"
               >
                 {SITE.cta}
               </a>
