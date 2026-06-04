@@ -23,12 +23,12 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-16 bg-[#000000]"
     >
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-5xl mx-auto px-6 text-center">
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
 
           <motion.h1
             variants={itemVariants}
-            className="font-display text-4xl sm:text-6xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6 text-white"
+            className="font-display text-5xl sm:text-7xl lg:text-9xl font-bold leading-[1.02] tracking-tight mb-8 text-white"
           >
             More Calls.<br />
             <span className="text-[#D4AF6A]">More Customers.</span>
@@ -36,7 +36,7 @@ export default function HeroSection() {
 
           <motion.p
             variants={itemVariants}
-            className="text-zinc-400 text-base sm:text-xl max-w-xl mx-auto leading-relaxed mb-10"
+            className="text-zinc-400 text-lg sm:text-2xl max-w-2xl mx-auto leading-relaxed mb-12"
           >
             {SITE.subTagline}
           </motion.p>
