@@ -10,7 +10,7 @@ export default function PricingSection() {
           <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
             Simple, Transparent Pricing
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold text-white mb-4">
             Plans for Every Stage
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">

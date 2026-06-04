@@ -50,9 +50,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} scroll-smooth`}
-      style={{ colorScheme: 'dark' }}
+      style={{ colorScheme: 'dark', backgroundColor: '#000000' }}
     >
-      <body className="antialiased">{children}</body>
+      <body className="antialiased bg-black">{children}</body>
     </html>
   )
 }

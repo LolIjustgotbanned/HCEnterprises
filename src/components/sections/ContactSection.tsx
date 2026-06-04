@@ -69,7 +69,7 @@ export default function ContactSection() {
             <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
               Get Started
             </p>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
+            <h2 className="font-display text-5xl sm:text-6xl font-bold text-white mb-6">
               Ready to Build Your
               <br />
               <span className="text-zinc-400">Growth Engine?</span>

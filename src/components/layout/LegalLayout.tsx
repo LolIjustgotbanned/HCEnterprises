@@ -20,7 +20,7 @@ export default function LegalLayout({ title, lastUpdated, children }: LegalLayou
             >
               ← Back to home
             </a>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-3">
+            <h1 className="font-display text-5xl sm:text-6xl font-bold text-white mb-3">
               {title}
             </h1>
             <p className="text-zinc-500 text-sm">Last updated: {lastUpdated}</p>

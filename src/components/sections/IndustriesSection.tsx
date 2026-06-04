@@ -31,7 +31,7 @@ export default function IndustriesSection() {
           <p className="text-[#D4AF6A] text-xs font-medium tracking-widest uppercase mb-4">
             Who We Work With
           </p>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
+          <h2 className="font-display text-5xl sm:text-6xl font-bold text-white">
             Industries We Serve
           </h2>
         </AnimatedSection>

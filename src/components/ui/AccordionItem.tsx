@@ -19,7 +19,7 @@ export default function AccordionItem({ question, answer }: AccordionItemProps) 
         className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer"
         aria-expanded={open}
       >
-        <span className="text-white font-medium leading-snug">{question}</span>
+        <span className="text-white font-medium leading-snug text-lg">{question}</span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
@@ -39,7 +39,7 @@ export default function AccordionItem({ question, answer }: AccordionItemProps) 
             transition={{ duration: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-zinc-400 leading-relaxed">{answer}</p>
+            <p className="pb-5 text-zinc-400 text-base leading-relaxed">{answer}</p>
           </motion.div>
         )}
       </AnimatePresence>
