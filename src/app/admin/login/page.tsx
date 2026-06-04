@@ -34,10 +34,11 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-black flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="mb-3">
-            <span className="font-bold text-[#D4AF6A] text-2xl tracking-wider">HC</span>
-            <span className="text-white text-2xl"> Enterprises</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="HC Enterprises"
+            style={{ height: '72px', width: 'auto', mixBlendMode: 'screen', margin: '0 auto 8px' }}
+          />
           <p className="text-zinc-500 text-sm">Admin — Sign in to access your CRM</p>
         </div>
 
