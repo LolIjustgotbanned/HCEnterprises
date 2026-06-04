@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Logo from '@/components/ui/Logo'
 
 export default function AdminLoginPage() {
   const [password, setPassword] = useState('')
@@ -34,11 +35,9 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-black flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <img
-            src="/logo.png"
-            alt="HC Enterprises"
-            style={{ height: '72px', width: 'auto', mixBlendMode: 'screen', margin: '0 auto 8px' }}
-          />
+          <div className="flex justify-center mb-2">
+            <Logo size="lg" />
+          </div>
           <p className="text-zinc-500 text-sm">Admin — Sign in to access your CRM</p>
         </div>
 

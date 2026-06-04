@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS, SITE } from '@/lib/constants'
+import Logo from '@/components/ui/Logo'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,11 +23,7 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#home">
-          <img
-            src="/logo.png"
-            alt="HC Enterprises Digital Marketing"
-            style={{ height: '52px', width: 'auto', mixBlendMode: 'screen' }}
-          />
+          <Logo size="sm" />
         </a>
 
         <ul className="hidden md:flex items-center gap-7">

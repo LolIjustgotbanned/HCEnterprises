@@ -1,4 +1,5 @@
 import { FOOTER_COLUMNS, SITE } from '@/lib/constants'
+import Logo from '@/components/ui/Logo'
 
 export default function Footer() {
   return (
@@ -7,12 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <div className="mb-4">
-              <img
-                src="/logo.png"
-                alt="HC Enterprises Digital Marketing"
-                style={{ height: '64px', width: 'auto', mixBlendMode: 'screen' }}
-              />
+            <div className="mb-5">
+              <Logo size="md" />
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-[200px]">
               Websites, CRM & marketing for local businesses.
