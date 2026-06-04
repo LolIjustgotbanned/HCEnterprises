@@ -26,29 +26,24 @@ const iconMap: Record<string, LucideIcon> = {
 export default function IndustriesSection() {
   return (
     <section id="industries" className="py-20 px-6 bg-[#080F24]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-12">
-          <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#D4AF6A] text-xs font-medium tracking-widest uppercase mb-4">
             Who We Work With
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
             Industries We Serve
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            We specialize in helping local and blue-collar businesses get more customers online.
-          </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {INDUSTRIES.map((industry, i) => {
             const Icon = iconMap[industry.icon]
             return (
-              <AnimatedSection key={industry.label} delay={i * 0.06}>
-                <div className="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-[#1A2540] bg-[#0D1630] hover:border-[#D4AF6A]/30 hover:bg-[#D4AF6A]/5 transition-all duration-300 cursor-default">
-                  <div className="w-12 h-12 rounded-xl bg-[#D4AF6A]/10 flex items-center justify-center group-hover:bg-[#D4AF6A]/20 transition-colors">
-                    {Icon && <Icon className="w-6 h-6 text-[#D4AF6A]" />}
-                  </div>
-                  <span className="text-white text-sm font-medium text-center">{industry.label}</span>
+              <AnimatedSection key={industry.label} delay={i * 0.05}>
+                <div className="flex items-center gap-3 px-5 py-4 rounded-xl border border-[#1A2540] bg-[#0D1630]">
+                  {Icon && <Icon className="w-4 h-4 text-[#D4AF6A] shrink-0" />}
+                  <span className="text-slate-300 text-sm">{industry.label}</span>
                 </div>
               </AnimatedSection>
             )

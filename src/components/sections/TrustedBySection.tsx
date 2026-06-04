@@ -1,32 +1,17 @@
-import { SITE, CLIENT_NAMES } from '@/lib/constants'
+import { CLIENT_NAMES, SITE } from '@/lib/constants'
 
 export default function TrustedBySection() {
-  const doubled = [...CLIENT_NAMES, ...CLIENT_NAMES]
-
   return (
-    <section className="py-12 border-y border-[#1A2540] bg-[#080F24]/50 overflow-hidden">
-      <p className="text-center text-slate-500 text-sm font-medium tracking-widest uppercase mb-8">
+    <section className="py-10 border-y border-[#1A2540]">
+      <p className="text-center text-slate-600 text-xs font-medium tracking-widest uppercase">
         {SITE.socialProof}
       </p>
-
-      <div className="relative">
-        {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#050A18] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#050A18] to-transparent z-10 pointer-events-none" />
-
-        <div
-          className="flex gap-16 whitespace-nowrap"
-          style={{ animation: 'marquee 30s linear infinite' }}
-        >
-          {doubled.map((name, i) => (
-            <span
-              key={i}
-              className="text-slate-600 text-lg font-semibold tracking-wide shrink-0"
-            >
-              {name}
-            </span>
-          ))}
-        </div>
+      <div className="mt-6 flex flex-wrap justify-center gap-x-10 gap-y-3 max-w-4xl mx-auto px-6">
+        {CLIENT_NAMES.map((name) => (
+          <span key={name} className="text-slate-700 text-sm font-medium">
+            {name}
+          </span>
+        ))}
       </div>
     </section>
   )

@@ -1,41 +1,37 @@
 import { ArrowUpRight } from 'lucide-react'
 import { RESOURCES } from '@/lib/constants'
 import AnimatedSection from '@/components/ui/AnimatedSection'
-import GradientBadge from '@/components/ui/GradientBadge'
 
 export default function ResourcesSection() {
   return (
     <section id="resources" className="py-24 px-6 bg-[#080F24]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-16">
-          <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#D4AF6A] text-xs font-medium tracking-widest uppercase mb-4">
             Free Resources
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-            Intelligence for Modern Operators
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+            Tools for Local Business Owners
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Practical frameworks and tools used by our clients — available to you at no cost.
+          <p className="text-slate-500 text-base max-w-md mx-auto">
+            Practical guides available at no cost.
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="space-y-0 border border-[#1A2540]">
           {RESOURCES.map((resource, i) => (
-            <AnimatedSection key={resource.title} delay={i * 0.1}>
-              <div className="group rounded-2xl p-8 border border-[#1A2540] bg-[#0D1630] hover:-translate-y-1 hover:shadow-2xl hover:border-[#D4AF6A]/20 transition-all duration-300 cursor-pointer h-full flex flex-col">
-                <GradientBadge color="gold" className="mb-4 w-fit">
-                  {resource.type}
-                </GradientBadge>
-                <h3 className="text-white font-semibold text-lg mb-3 leading-snug flex-1">
-                  {resource.title}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                  {resource.description}
-                </p>
-                <div className="flex items-center gap-2 text-[#D4AF6A] text-sm font-medium group-hover:gap-3 transition-all">
-                  Download Now
-                  <ArrowUpRight className="w-4 h-4" />
+            <AnimatedSection key={resource.title} delay={i * 0.08}>
+              <div className="group flex items-center justify-between gap-6 p-7 border-b border-[#1A2540] last:border-b-0 hover:bg-[#0D1630] transition-colors cursor-pointer">
+                <div className="flex items-start gap-5">
+                  <span className="text-[10px] font-semibold tracking-widest uppercase text-[#D4AF6A] shrink-0 mt-1 w-20">
+                    {resource.type}
+                  </span>
+                  <div>
+                    <h3 className="text-white font-medium text-sm mb-1">{resource.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed">{resource.description}</p>
+                  </div>
                 </div>
+                <ArrowUpRight className="w-4 h-4 text-slate-600 group-hover:text-[#D4AF6A] transition-colors shrink-0" />
               </div>
             </AnimatedSection>
           ))}
