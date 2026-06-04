@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <span className="font-bold text-[#D4AF6A] text-2xl tracking-wider">HC</span>
-              <span className="text-white text-lg">Enterprises</span>
+              <span className="text-white text-2xl">Enterprises</span>
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-[200px]">
               Revenue growth systems for ambitious brands.
