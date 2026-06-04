@@ -4,9 +4,9 @@ interface LogoProps {
 
 export default function Logo({ size = 'md' }: LogoProps) {
   const s = {
-    sm: { box: 34, hcBox: 16, hcText: 20, enterprise: 7.5, digital: 5.5, gap: 8 },
-    md: { box: 42, hcBox: 20, hcText: 24, enterprise: 9,   digital: 6.5, gap: 10 },
-    lg: { box: 54, hcBox: 25, hcText: 30, enterprise: 11,  digital: 8,   gap: 12 },
+    sm: { box: 44, hcBox: 21, hcText: 26, enterprise: 9.5, digital: 7,   gap: 10 },
+    md: { box: 54, hcBox: 26, hcText: 32, enterprise: 12,  digital: 8.5, gap: 12 },
+    lg: { box: 68, hcBox: 33, hcText: 40, enterprise: 14,  digital: 10,  gap: 14 },
   }[size]
 
   return (
