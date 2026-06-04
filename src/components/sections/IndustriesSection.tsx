@@ -32,7 +32,7 @@ export default function IndustriesSection() {
             Who We Work With
           </p>
           <h2 className="font-display text-3xl sm:text-5xl font-bold text-white">
-            Industries We Serve
+            If You Have Customers, You Have Us
           </h2>
         </AnimatedSection>
 
