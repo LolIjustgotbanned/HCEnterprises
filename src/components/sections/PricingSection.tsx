@@ -4,13 +4,13 @@ import PricingCard from '@/components/ui/PricingCard'
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-24 px-6 bg-[#0A0A0A]">
+    <section id="pricing" className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
             Simple, Transparent Pricing
           </p>
-          <h2 className="font-display text-5xl sm:text-6xl font-bold text-white mb-4">
+          <h2 className="font-display text-3xl sm:text-5xl font-bold text-white mb-4">
             Plans for Every Stage
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">

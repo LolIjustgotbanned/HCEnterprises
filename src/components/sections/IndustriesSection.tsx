@@ -25,13 +25,13 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function IndustriesSection() {
   return (
-    <section id="industries" className="py-20 px-6 bg-[#0A0A0A]">
+    <section id="industries" className="py-14 sm:py-20 px-4 sm:px-6 bg-[#0A0A0A]">
       <div className="max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-12">
           <p className="text-[#D4AF6A] text-xs font-medium tracking-widest uppercase mb-4">
             Who We Work With
           </p>
-          <h2 className="font-display text-5xl sm:text-6xl font-bold text-white">
+          <h2 className="font-display text-3xl sm:text-5xl font-bold text-white">
             Industries We Serve
           </h2>
         </AnimatedSection>
@@ -41,7 +41,7 @@ export default function IndustriesSection() {
             const Icon = iconMap[industry.icon]
             return (
               <AnimatedSection key={industry.label} delay={i * 0.05}>
-                <div className="flex items-center gap-3 px-5 py-4 rounded-xl border border-[#2A2A2A] bg-[#1A1A1A]">
+                <div className="flex items-center gap-2 px-3 py-3 sm:px-5 sm:py-4 rounded-xl border border-[#2A2A2A] bg-[#1A1A1A]">
                   {Icon && <Icon className="w-4 h-4 text-[#D4AF6A] shrink-0" />}
                   <span className="text-zinc-300 text-sm">{industry.label}</span>
                 </div>

@@ -61,15 +61,15 @@ export default function ContactSection() {
     'w-full bg-[#0A0A0A] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white text-sm placeholder-slate-600 focus:outline-none focus:border-[#D4AF6A]/50 transition-colors'
 
   return (
-    <section id="contact" className="py-24 px-6 bg-[#0A0A0A]">
+    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 bg-[#0A0A0A]">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left */}
           <AnimatedSection>
             <p className="text-[#D4AF6A] text-sm font-medium tracking-widest uppercase mb-4">
               Get Started
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl font-bold text-white mb-6">
+            <h2 className="font-display text-3xl sm:text-5xl font-bold text-white mb-6">
               Ready to Build Your
               <br />
               <span className="text-zinc-400">Growth Engine?</span>
@@ -106,7 +106,7 @@ export default function ContactSection() {
 
           {/* Right */}
           <AnimatedSection delay={0.15}>
-            <div className="rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A] p-8">
+            <div className="rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A] p-5 sm:p-8">
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <CheckCircle className="w-16 h-16 text-[#D4AF6A] mb-6" />

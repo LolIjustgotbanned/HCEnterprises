@@ -22,8 +22,8 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
-          <span className="font-bold text-[#D4AF6A] text-2xl tracking-wider">HC</span>
-          <span className="text-white text-2xl">Enterprises</span>
+          <span className="font-bold text-[#D4AF6A] text-xl sm:text-2xl tracking-wider">HC</span>
+          <span className="text-white text-xl sm:text-2xl">Enterprises</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-7">

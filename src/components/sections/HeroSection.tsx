@@ -28,7 +28,7 @@ export default function HeroSection() {
 
           <motion.h1
             variants={itemVariants}
-            className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6 text-white"
+            className="font-display text-4xl sm:text-6xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6 text-white"
           >
             More Calls.<br />
             <span className="text-[#D4AF6A]">More Customers.</span>
@@ -36,7 +36,7 @@ export default function HeroSection() {
 
           <motion.p
             variants={itemVariants}
-            className="text-zinc-400 text-xl sm:text-2xl max-w-xl mx-auto leading-relaxed mb-10"
+            className="text-zinc-400 text-base sm:text-xl max-w-xl mx-auto leading-relaxed mb-10"
           >
             {SITE.subTagline}
           </motion.p>

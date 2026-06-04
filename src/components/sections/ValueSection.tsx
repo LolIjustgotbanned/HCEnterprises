@@ -11,13 +11,13 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function ValueSection() {
   return (
-    <section id="services" className="py-24 px-6 bg-[#000000]">
+    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 bg-[#000000]">
       <div className="max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-16">
           <p className="text-[#D4AF6A] text-xs font-medium tracking-widest uppercase mb-4">
             What We Do
           </p>
-          <h2 className="font-display text-5xl sm:text-6xl font-bold text-white mb-4">
+          <h2 className="font-display text-3xl sm:text-5xl font-bold text-white mb-4">
             Built for Local Businesses That Want to Grow
           </h2>
           <p className="text-zinc-500 text-lg max-w-lg mx-auto">
