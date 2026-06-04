@@ -8,10 +8,8 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#D4AF6A] to-[#C9972A] flex items-center justify-center">
-                <span className="text-[#000000] font-black text-sm">HC</span>
-              </div>
-              <span className="font-semibold text-white text-sm">{SITE.name}</span>
+              <span className="font-bold text-[#D4AF6A] text-2xl tracking-wider">HC</span>
+              <span className="text-zinc-400 text-lg">Enterprises</span>
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-[200px]">
               Revenue growth systems for ambitious brands.
